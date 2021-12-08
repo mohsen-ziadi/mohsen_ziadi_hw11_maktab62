@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <form action="/auth" method="post">
+      <h1>ورود به پنل کاربری</h1>
+      <span class="input"
+        ><i class="fa fa-male"></i
+        ><input type="text" name="userName" placeholder="نام کاربری" required
+      /></span>
+      <span class="input"
+        ><i class="fa fa-lock"></i
+        ><input type="password" name="password" placeholder="رمز عبور" required
+      /></span>
+      <input type="submit" value="ورود" />
+      <p>حساب کاربری ندارید؟ <a href="#">ثبت نام</a></p>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+  </body>
+</html>

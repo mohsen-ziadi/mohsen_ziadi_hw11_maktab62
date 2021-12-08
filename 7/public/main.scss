@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Login";
+  src: url("/fonts/Vazir-Regular-FD-WOL.eot") format("eot"),
+    url("/fonts/Vazir-Regular-FD-WOL.ttf") format("truetype"),
+    url("/fonts/Vazir-Regular-FD-WOL.woff") format("woff"),
+    url("/fonts/Vazir-Regular-FD-WOL.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Login", sans-serif;
+  color: white;
+}
+
+body {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-image: url("/images/4k-Wallpaper-space.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+form {
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  padding: 35px 25px;
+  width: 425px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+
+  h1 {
+    font-size: 20px;
+  }
+
+  span.input {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid white;
+    overflow: hidden;
+    margin-top: 10px;
+
+    svg {
+      padding: 10px;
+      background-color: #808080;
+      width: 20px;
+    }
+
+    input {
+      border-radius: 0;
+      outline: none;
+      border: none;
+      height: 36px;
+      width: 100%;
+      color: #000000;
+      padding: 0 5px;
+    }
+  }
+
+  button {
+    width: 80%;
+    background-color: #159e15;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 2px solid #159e15;
+    transition: all ease .3s;
+    font-size: 18px;
+
+    &:hover {
+      background-color: transparent;
+      color: #159e15;
+    }
+  }
+
+  p {
+    a {
+      color: #0000ff;
+      text-decoration: none;
+    }
+  }
+}
